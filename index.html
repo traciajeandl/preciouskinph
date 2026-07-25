@@ -29,7 +29,7 @@
         </div>
 
         <!-- Mobile Menu -->
-        <div class="flex lg:hidden bg-amber-800">
+        <div class="flex lg:hidden">
             <button type="button" command="show-modal" commandfor="mobile-menu"
             class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-white">
             <span class="sr-only">Open main menu</span>
@@ -50,7 +50,7 @@
     <el-dialog>
         <dialog id="mobile-menu" class="backdrop:bg-transparent lg:hidden">
         <div tabindex="0" class="fixed inset-0 focus:outline-none">
-            <el-dialog-panel class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-amber-800 p-6 sm:max-w-sm sm:ring-1 sm:ring-gray-100/10">
+            <el-dialog-panel class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-amber-950/80 p-6 sm:max-w-sm sm:ring-1 sm:ring-gray-100/10">
             <div class="flex items-center justify-between">
                 <a href="#" class="-m-1.5 p-1.5">
                 <span class="sr-only">PreciousSkin</span>
@@ -82,7 +82,7 @@
     </el-dialog>
     </header>
 
-    <section class="relative w-full h-screen">
+    <section class="relative h-screen">
         <!-- Background Image -->
         <img
             src="assets/home-bg.png"
@@ -93,7 +93,7 @@
         <!-- Text Overlay -->
         <div class="absolute inset-0 flex items-center">
             <div class="ml-10 md:ml-20 max-w-xl text-white">
-                <p class="text-lg uppercase tracking-widest mb-2 font-bold bg-amber-950">
+                <p class="text-lg uppercase tracking-widest mb-2 bg-amber-950">
                     TRENDING NOW
                 </p>
 
@@ -111,6 +111,13 @@
     <section class="">
         <img
             src="assets/PS-BW1.jpeg"
+            alt="PreciousSkin"
+            class="w-full h-full object-cover"
+        >
+    </section>
+    <section class="">
+        <img
+            src="assets/PS-Serum-1.jpeg"
             alt="PreciousSkin"
             class="w-full h-full object-cover"
         >
