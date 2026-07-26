@@ -551,6 +551,15 @@
   .bg-amber-400 {
     background-color: var(--color-amber-400);
   }
+  .bg-amber-700 {
+    background-color: var(--color-amber-700);
+  }
+  .bg-amber-700\/80 {
+    background-color: color-mix(in srgb, oklch(55.5% 0.163 48.998) 80%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      background-color: color-mix(in oklab, var(--color-amber-700) 80%, transparent);
+    }
+  }
   .bg-amber-800 {
     background-color: var(--color-amber-800);
   }
@@ -1274,4 +1283,36 @@
       --tw-ease: initial;
     }
   }
+}
+
+.carousel {
+  margin: 50px auto;
+  width: 100%;
+  display: flex;
+  overflow-x: auto;
+  gap: 1em;
+}
+.carousel::-webkit-scrollbar {
+  display: none;
+}
+.group{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+  animation: spin 15s infinite linear;
+  padding-right: 1em;
+}
+.card {
+  flex: 0 0 5em;
+  height: 5em;
+  padding: 1em;
+  font-size: 3em;
+  border-radius: .2em;
+  text-align: center;
+  align-content: center;
+}
+@keyframes spin {
+  from {translate: 0;}
+  to {translate: -100%;}
 }
