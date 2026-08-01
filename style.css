@@ -1286,24 +1286,29 @@
 }
 
 .carousel {
+    margin:10px auto;
     width: 100%;
     display: flex;
-    overflow: hidden;
-    gap: 1rem;
+    overflow-x: auto;
     padding: 40px 0;
+}
+
+.carousel::-webkit-scrollbar {
+    display: none;
 }
 
 .group {
     display: flex;
-    gap: 1rem;
-    animation: spin 15s linear infinite;
+    gap: 1em;
+    animation: spin 5s infinite linear;
+    padding-right: 1em;
 }
 
 .card {
-    flex: 0 0 200px;
-    height: 200px;
+    flex: 0 0 10em;
+    height: 10em;
     overflow: hidden;
-    padding: 0;
+    
 }
 
 .card img {

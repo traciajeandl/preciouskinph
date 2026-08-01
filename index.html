@@ -23,7 +23,7 @@
             >
         </a>
         <!-- Center Title -->
-        <div class="hidden lg:block absolute left-1/2 -translate-x-1/2">
+        <div class="hidden lg:block absolute left-1/2 -translate-x-1/2 text-amber-50">
             <a href="#" class="text-3xl font-['Cormorant_Garamond'] tracking-widest">
             PRECIOUSKIN PH
             </a>
@@ -43,9 +43,10 @@
 
         <!-- Desktop Menu -->
         <el-popover-group class="hidden lg:flex lg:gap-x-12">
-            <a href="vt.tiktok.com/ZSXD3v7YA/?page=TikTokShop" target="_blank" class="text-sm font-semibold text-white">Shop Now</a>
-            <a href="https://www.instagram.com/preciouskinph/" class="text-sm font-semibold text-white">Contact Us</a>
-            <a href="#footer" class="text-sm font-semibold text-white">About</a>
+            <a href="#products" class="text-sm font-semibold text-white">Products</a>
+            <a href="#testimonials" class="text-sm font-semibold text-white">Testimonials</a>
+            <a href="https://www.tiktok.com/@preciouskinph" target="_blank" class="text-sm font-semibold text-white">Contact Us</a>
+            <a href="#footer" class="text-sm font-semibold text-white">About Us</a>
         </el-popover-group>
     </nav>
     <el-dialog>
@@ -66,14 +67,17 @@
             </div>
             <div class="mt-6 flow-root">
                 <div class="space-y-2 py-6">
-                    <a href="vt.tiktok.com/ZSXD3v7YA/?page=TikTokShop" target="_blank" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-white/5">
-                        Shop Now
+                    <a href="#products" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-white/5">
+                        Products
                     </a>
-                    <a href="https://www.instagram.com/preciouskinph/" target="_blank" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-white/5">
+                    <a href="#testimonials" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-white/5">
+                        Testimonials
+                    </a>
+                    <a href="https://www.tiktok.com/@preciouskinph" target="_blank" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-white/5">
                         Contact Us
                     </a>
                     <a href="#footer" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-white/5">
-                        About
+                        About Us
                     </a>
                 </div>
             </div>
@@ -110,25 +114,55 @@
         </div>
     </section>
 
-    <section class="bg-amber-950 py-10">
-        <div class="carousel">
-            <div class="group">
-                <div class="card"><img src="assets/1.png"></div>
-                <div class="card"><img src="assets/2.png"></div>
-                <div class="card"><img src="assets/3.png"></div>
-                <div class="card"><img src="assets/4.png"></div>
-                <div class="card"><img src="assets/5.png"></div>
-                <div class="card"><img src="assets/6.png"></div>
-            </div>
-            <div aria-hidden class="group">
-                <div class="card"><img src="assets/1.png"></div>
-                <div class="card"><img src="assets/2.png"></div>
-                <div class="card"><img src="assets/3.png"></div>
-                <div class="card"><img src="assets/4.png"></div>
-                <div class="card"><img src="assets/5.png"></div>
-                <div class="card"><img src="assets/6.png"></div>
+    <section id="products" class="bg-amber-950 py-6">
+        <div class="max-w-7xl mx-auto px-6 md:px-12 lg:px-20">
+
+            <!-- Title -->
+            <h2 class="text-5xl md:text-6xl font-['Cormorant_Garamond'] text-center text-amber-50">
+                Glowing Skin, Confidence! ✨
+            </h2>
+
+            <div class="flex flex-wrap justify-center gap-10 p-6 md:px-12">
+
+                <!-- Product 1 -->
+                <div class="w-80 p-6 text-center bg-white rounded-xl">
+                    <img src="assets/PS-BodyWash.jpeg"
+                        alt="Glow Jelly Mask"
+                        class="w-60 h-60 object-contain mx-auto">
+
+                    <h3 class="mt-4 text-xl font-semibold p-1">
+                        PreciousSkin Face and Body Wash
+                    </h3>
+
+                    <!-- Order Button -->
+                    <a href="https://vt.tiktok.com/ZS9rgtU9UwtPP-29JBQ/"
+                    target="_blank"
+                    class="text-amber-950 p-1">
+                        🛒 Order Now
+                    </a>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="w-80 p-6 text-center bg-white rounded-xl">
+                    <img src="assets/PS-Serum-1.jpeg"
+                        alt="Glow Body Cream"
+                        class="w-60 h-60 object-contain mx-auto">
+
+                    <h3 class="mt-4 text-xl font-semibold p-1">
+                        PreciousSkin Face Serum
+                    </h3>
+
+                    <!-- Order Button -->
+                    <a href="https://vt.tiktok.com/ZS9rgtBbYrX3q-VuXvE/"
+                    target="_blank"
+                    class="text-amber-950 p-1">
+                        🛒 Order Now
+                    </a>
+                </div>
             </div>
         </div>
+    </section>
+        
     </section>
 
     <section class="">
@@ -157,11 +191,95 @@
 
     <section class="">
         <img
+            src="assets/PS-Serum-1.jpeg"
+            alt="PreciousSkin"
+            class="w-full h-full object-cover"
+        >
+    </section>
+
+    <section class="">
+        <img
             src="assets/PS-Serum2.jpeg"
             alt="PreciousSkin"
             class="w-full h-full object-cover"
         >
     </section>
+
+    <section class="bg-amber-950">
+        <div class="carousel">
+            <div class="group">
+                <div class="card"><img src="assets/1.png"></div>
+                <div class="card"><img src="assets/2.png"></div>
+                <div class="card"><img src="assets/3.png"></div>
+                <div class="card"><img src="assets/4.png"></div>
+                <div class="card"><img src="assets/5.png"></div>
+                <div class="card"><img src="assets/6.png"></div>
+            </div>
+            <div aria-hidden class="group">
+                <div class="card"><img src="assets/1.png"></div>
+                <div class="card"><img src="assets/2.png"></div>
+                <div class="card"><img src="assets/3.png"></div>
+                <div class="card"><img src="assets/4.png"></div>
+                <div class="card"><img src="assets/5.png"></div>
+                <div class="card"><img src="assets/6.png"></div>
+            </div>
+            <div aria-hidden class="group">
+                <div class="card"><img src="assets/1.png"></div>
+                <div class="card"><img src="assets/2.png"></div>
+                <div class="card"><img src="assets/3.png"></div>
+                <div class="card"><img src="assets/4.png"></div>
+                <div class="card"><img src="assets/5.png"></div>
+                <div class="card"><img src="assets/6.png"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="">
+        <img
+            src="assets/heading.png"
+            alt="PreciousSkin"
+            class="w-full h-full object-cover"
+        >
+    </section>
+
+    <section id="testimonials" class="bg-amber-950 py-6">
+        <div class="max-w-7xl mx-auto px-6 md:px-12 lg:px-20">
+
+            <!-- Title -->
+            <h2 class="text-5xl md:text-6xl font-['Cormorant_Garamond'] text-center text-amber-50">
+                Proven and tested! ✨
+            </h2>
+
+            <div class="flex flex-wrap justify-center gap-10 p-6 md:px-12 overflow-hidden">
+                <!-- Product 1 -->
+                <div class="w-80 p-6 text-center bg-white rounded-xl">
+                <blockquote class="instagram-media w-full" data-instgrm-permalink="https://www.instagram.com/p/DZKPHLNSAOA/" data-instgrm-version="14"> </blockquote>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="w-80 p-6 text-center bg-white rounded-xl">
+                <blockquote class="instagram-media w-full" data-instgrm-permalink="https://www.instagram.com/p/Da14C4stf2I/" data-instgrm-version="14"> </blockquote>
+                </div>
+            </div>
+            <div class="flex flex-wrap justify-center gap-10 p-6 md:px-12">
+                <!-- Product 1 -->
+                <div class="w-80 p-6 text-center bg-white rounded-xl">
+                <blockquote class="instagram-media w-full" data-instgrm-permalink="https://www.instagram.com/p/Da2aYz_tFhd/" data-instgrm-version="14"> </blockquote>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="w-80 p-6 text-center bg-white rounded-xl">
+                <blockquote class="instagram-media w-full" data-instgrm-permalink="https://www.instagram.com/p/DbIcFZduOlo/" data-instgrm-version="14"> </blockquote>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- Instagram Script -->
+<script async src="//www.instagram.com/embed.js"></script>
+
+    
+
 </body>
 <footer id="footer" class="bg-amber-950 text-white">
     <div class="max-w-7xl mx-auto px-6 py-12">
@@ -170,38 +288,36 @@
 
             <!-- Brand -->
             <div>
-                <h2 class="text-2xl font-bold">PresciousSkin PH</h2>
+                <h2 class="text-2xl font-bold font-['Cormorant_Garamond']">PresciousSkin PH</h2>
                 <p class="mt-4 text-sm leading-6">
-                    Bringing confidence through quality skincare products.
-                    Healthy skin starts with the right care.
+                    Glowing Skin, Confidence! ✨
                 </p>
             </div>
             <!-- Contact -->
             <div>
                 <h3 class="text-lg font-semibold mb-4">Contact</h3>
                 <ul class="space-y-2 text-sm">
-                    <li>📍 Metro Manila, Philippines</li>
-                    <li>📞 +63 912 345 6789</li>
-                    <li>✉️ info@presciousskin.com</li>
+                    <li>📍 Penthouse Topaz steet, ADB Avenue Tower Ortigas 1605 Mandaluyong, Philippines</li>
+                    <li>✉️ preciouskinofficial@gmail.com</li>
                 </ul>
             </div>
 
             <!-- Social -->
             <div class="flex items-center gap-6 mt-6 px-1">
                 Follow us on social media:
-                <a href="#"
+                <a href="https://www.facebook.com/profile.php?id=61581746982620"
                 target="_blank"
                 class="w-10 h-10 rounded-full hover:bg-yellow-400 hover:text-black text-white flex items-center justify-center transition duration-300">
                     <i class="fa-brands fa-facebook-f"></i>
                 </a>
 
-                <a href="https://www.instagram.com/preciouskinph/
+                <a href="https://www.instagram.com/preciouskinph/"
                 target="_blank"
                 class="w-10 h-10 rounded-full hover:bg-yellow-400 hover:text-black text-white flex items-center justify-center transition duration-300">
                     <i class="fa-brands fa-instagram"></i>
                 </a>
 
-                <a href="#"
+                <a href="https://www.tiktok.com/@preciouskinph"
                 target="_blank"
                 class="w-10 h-10 rounded-full hover:bg-yellow-400 hover:text-black text-white flex items-center justify-center transition duration-300">
                     <i class="fa-brands fa-tiktok"></i>
