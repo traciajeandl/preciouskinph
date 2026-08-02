@@ -1305,8 +1305,8 @@
 }
 
 .card {
-    flex: 0 0 10em;
-    height: 10em;
+    flex: 0 0 20em;
+    height: 30em;
     overflow: hidden;
     
 }
