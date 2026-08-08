@@ -11,7 +11,7 @@
 </head>
 
 <body>
-    <header class="fixed top-0 left-0 w-full z-50 bg-gray-900 backdrop-blur-lg border-b border-gray-900/20 shadow-lg">
+    <header class="fixed top-0 left-0 w-full z-50 bg-amber-950/80 backdrop-blur-lg border-b border-amber-950/20 shadow-lg">
         <nav aria-label="Global" class="relative mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8">
 
         <!-- Logo -->
@@ -30,7 +30,10 @@
         </div>
 
         <!-- Mobile Menu -->
-        <div class="flex lg:hidden">
+        <div class="flex lg:hidden items-center gap-6">
+            <!-- Desktop Menu -->
+            <a href="#products" class="text-sm font-semibold text-white">Products</a>
+            <a href="https://www.tiktok.com/@preciouskinph" target="_blank" class="text-sm font-semibold text-white">Shop Now</a>
             <button type="button" command="show-modal" commandfor="mobile-menu"
             class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-white">
             <span class="sr-only">Open main menu</span>
@@ -41,18 +44,17 @@
             </button>
         </div>
 
-        <!-- Desktop Menu -->
-        <el-popover-group class="hidden lg:flex lg:gap-x-12">
+        <el-popover-group class="lg:flex hidden lg:gap-x-12">
             <a href="#products" class="text-sm font-semibold text-white">Products</a>
-            <a href="#testimonials" class="text-sm font-semibold text-white">Testimonials</a>
-            <a href="https://www.tiktok.com/@preciouskinph" target="_blank" class="text-sm font-semibold text-white">Contact Us</a>
+            <a href="https://www.tiktok.com/@preciouskinph" target="_blank" class="text-sm font-semibold text-white">Shop Now</a>
+            <a href="#testimonials" class="text-sm font-semibold text-white">Review</a>
             <a href="#footer" class="text-sm font-semibold text-white">About Us</a>
         </el-popover-group>
     </nav>
     <el-dialog>
         <dialog id="mobile-menu" class="backdrop:bg-transparent lg:hidden">
         <div tabindex="0" class="fixed inset-0 focus:outline-none">
-            <el-dialog-panel class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-gray-900 p-6 sm:max-w-sm sm:ring-1 sm:ring-gray-100/10">
+            <el-dialog-panel class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-amber-950/80 p-6 sm:max-w-sm sm:ring-1 sm:ring-gray-100/10">
             <div class="flex items-center justify-between">
                 <a href="#" class="-m-1.5 p-1.5">
                 <span class="sr-only">Preciouskin</span>
@@ -67,15 +69,14 @@
             </div>
             <div class="mt-6 flow-root">
                 <div class="space-y-2 py-6">
-                    <a href="#products" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-white/5">
+                    <!-- <a href="#products" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-white/5">
                         Products
-                    </a>
+                    </a> -->
                     <a href="#testimonials" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-white/5">
-                        Testimonials
+                        Reviews
                     </a>
-                    <a href="https://www.tiktok.com/@preciouskinph" target="_blank" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-white/5">
-                        Contact Us
-                    </a>
+                    <!-- <a href="https://www.tiktok.com/@preciouskinph" target="_blank" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-white/5">
+                        Shop Now -->
                     <a href="#footer" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-white/5">
                         About Us
                     </a>
@@ -87,18 +88,18 @@
     </el-dialog>
     </header>
 
-    <section class="relative h-screen cream">
+    <section class="relative h-screen">
         <!-- Background Image -->
         <img
             src="/assets/header-video.gif" 
-            alt="PreciousSkin"
+            alt="Animated image"
             class="w-full h-full object-cover"
         >
 
         <!-- Text Overlay -->
         <div class="absolute inset-0 flex items-center">
             <div class="ml-10 md:ml-20 max-w-xl text-gray-900">
-                <p class="text-lg uppercase tracking-widest mb-2 bg-gray-900 text-white">
+                <p class="text-lg uppercase tracking-widest mb-2 bg-amber-950 text-white">
                     <i>TRENDING NOW</i> 
                 </p>
 
@@ -120,7 +121,7 @@
             <div class="flex flex-wrap justify-center gap-10 p-6 md:px-12">
 
                 <!-- Left Picture -->
-                <div class="p-6 bg-white rounded-xl">
+                <div class="">
                     <img
                         src="assets/mainpic1.png"
                         alt="Photo 1"
@@ -129,7 +130,7 @@
                 </div>
 
                 <!-- Right Picture -->
-                <div class="p-6 bg-white rounded-xl">
+                <div class="">
                     <img
                         src="assets/mainpic2.png"
                         alt="Photo 2"
@@ -142,11 +143,59 @@
         </div>
     </section>
 
+    <section class="cream">
+        <div class="max-w-7xl mx-auto px-0">
+
+            <h2 class="text-4xl md:text-4xl text-center text-white p-2 bg-amber-950/50">
+                "<b><i>Preciouskin Face & Body Wash and Face Serum</i></b> are the perfect duo for achieving radiant, healthy skin. Our Face & Body Wash gently cleanses and nourishes your skin, while our Face Serum provides deep hydration and promotes a youthful glow. Together, they help you achieve the ultimate skincare routine for a flawless complexion. ✨"
+            </h2>
+
+            <div class="grid grid-cols-2 gap-0">
+
+                <!-- Left Picture -->
+                <div class="w-full">
+                    <img
+                        src="assets/PS-BW1.jpeg"
+                        alt="Photo 1"
+                        class="w-full h-80 object-cover rounded-none shadow-none"
+                    >
+                </div>
+
+                <!-- Right Picture -->
+                <div class="w-full">
+                    <img
+                        src="assets/PS-BW2.jpeg"
+                        alt="Photo 2"
+                        class="w-full h-80 object-cover rounded-none shadow-none"
+                    >
+                </div>
+
+                <div class="w-full">
+                    <img
+                        src="assets/PS-Serum-1.jpeg"
+                        alt="Photo 3"
+                        class="w-full h-80 object-cover rounded-none shadow-none"
+                    >
+                </div>
+
+                <div class="w-full">
+                    <img
+                        src="assets/PS-Serum2.jpeg"
+                        alt="Photo 4"
+                        class="w-full h-80 object-cover rounded-none shadow-none"
+                    >
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
     <section id="products" class="cream py-6">
         <div class="max-w-7xl mx-auto px-6 md:px-12 lg:px-20">
 
             <!-- Title -->
-            <h2 class="text-5xl md:text-6xl font-['Cormorant_Garamond'] text-center text-gray-900">
+            <h2 class="text-5xl md:text-6xl font-serif text-center text-gray-900">
                 Glowing Skin, Confidence! ✨
             </h2>
 
@@ -192,22 +241,6 @@
     </section>
         
 
-    <section class="">
-        <img
-            src="assets/PS-BW1.jpeg"
-            alt="PreciousSkin"
-            class="w-full h-full object-cover"
-        >
-    </section>
-
-    <section class="">
-        <img
-            src="assets/PS-BW2.jpeg"
-            alt="PreciousSkin"
-            class="w-full h-full object-cover"
-        >
-    </section>
-
     <!-- <section class="">
         <img
             src="assets/product.png"
@@ -215,22 +248,6 @@
             class="w-full h-full object-cover"
         >
     </section> -->
-
-    <section class="">
-        <img
-            src="assets/PS-Serum-1.jpeg"
-            alt="PreciousSkin"
-            class="w-full h-full object-cover"
-        >
-    </section>
-
-    <section class="">
-        <img
-            src="assets/PS-Serum2.jpeg"
-            alt="PreciousSkin"
-            class="w-full h-full object-cover"
-        >
-    </section>
 
     <!-- <section class="bg-amber-950">
         <div class="carousel">
@@ -376,7 +393,7 @@
     
 
 </body>
-<footer id="footer" class="cream text-gray-900">
+<footer id="footer" class="bg-amber-950 text-white">
     <div class="max-w-7xl mx-auto px-6 py-12 ">
 
         <div class="grid grid-cols-1 md:grid-cols-4 gap-10">
